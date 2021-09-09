@@ -8,7 +8,7 @@
 
 export const APP_NAME = 'nf-data-explorer-2';
 
-export const APP_PORT = 80;
+export const APP_PORT = 3000;
 
 /**
  * The list of supported datastores. Support for a datastore can be removed by simply removing it
@@ -248,3 +248,9 @@ export const CLUSTER_REDIRECT_HOST =
 export const CLUSTER_NAME_PATTERN_CASSANDRA = '.*';
 export const CLUSTER_NAME_PATTERN_REDIS = '.*';
 export const CLUSTER_NAME_PATTERN_DYNOMITE = '.*';
+
+/**
+ * DataStax Astra DB connection information
+ */
+export let ASTRA_APPLICATION_TOKEN = '';
+export let ASTRA_SECURE_BUNDLE_NAME = '';

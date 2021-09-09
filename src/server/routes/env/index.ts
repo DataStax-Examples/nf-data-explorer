@@ -11,13 +11,20 @@ import {
 } from '@/utils/app-utils';
 import { Router } from 'express';
 import _ from 'lodash';
-import { getConfig } from '@/config/configuration';
+import { getConfig, setAstraConfiguration } from '@/config/configuration';
+import multer from 'multer';
 
 const logger = setupLogger(module);
 
 const router = Router();
 
-const { CLUSTER_REDIRECT_HOST } = getConfig();
+const { MAX_FILE_UPLOAD, CLUSTER_REDIRECT_HOST } = getConfig();
+const upload = multer({
+  dest: 'uploads/',
+  limits: {
+    fileSize: MAX_FILE_UPLOAD,
+  },
+});
 
 function getRedirectHost(host: string, region: string, env: string): string {
   return CLUSTER_REDIRECT_HOST.replace(
@@ -35,6 +42,15 @@ function getRedirectHost(host: string, region: string, env: string): string {
     },
   );
 }
+
+router.post('/astradb', upload.single('file'), (req, res) => {
+  if (req.body.applicationToken && req.file.filename) {
+    setAstraConfiguration(req.body.applicationToken, req.file.filename);
+  }
+  return res.json({
+    success: true,
+  });
+});
 
 /**
  * Fetch all the available regions as well as the name of the current environment and region.
