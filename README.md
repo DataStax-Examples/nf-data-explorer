@@ -2,6 +2,8 @@
 # Netflix Data Explorer
 *10 minutes, Beginner, [Start Building](https://github.com/DataStax-Examples/nf-data-explorer#prerequisites)*
 
+[![Open in IDE](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Examples/nf-data-explorer)
+
 Launch Netlfix's Open Source Data Explorer in Gitpod and connect to your Astra DB instance!
 <!--- ENDEXCLUDE --->
 
