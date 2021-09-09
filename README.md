@@ -7,7 +7,7 @@
 Launch Netlfix's Open Source Data Explorer in Gitpod and connect to your Astra DB instance!
 <!--- ENDEXCLUDE --->
 
-![image](https://github.com/DataStax-Examples/nf-data-explorer/blob/master/hero.png)
+![image](https://raw.githubusercontent.com/DataStax-Examples/nf-data-explorer/master/hero.png)
 
 ## Objectives
 * Connect the Netflix Data Explorer that is running in Gitpod to your Astra DB instance.
