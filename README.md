@@ -26,7 +26,7 @@ Follow the instructions below to get started.
 Let's do some initial setup by creating a serverless(!) database.
 
 ### DataStax Astra
-1. Create a [DataStax Astra account](https://astra.datastax.com/register?utm_source=github&utm_medium=referral&utm_campaign=nf-data-explorer) if you don't already have one:
+1. Create a [DataStax Astra account](https://dtsx.io/3tuBCKj) if you don't already have one:
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-register-basic-auth.png)
 
 2. On the home page. Locate the button **`Create Database`**
