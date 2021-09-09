@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 
+venv
+
 # local env files
 .env.local
 .env.*.local
@@ -24,8 +26,5 @@ app.log
 src/client/src/shared/**/*.ts
 coverage/**
 uploads/**
-src/server/config/overrides
-
-discovery.json
 
 .npmrc

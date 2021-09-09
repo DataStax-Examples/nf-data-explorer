@@ -9,7 +9,7 @@
     "clean": "gulp clean",
     "dev": "gulp dev",
     "setup": "node install/install.js",
-    "start": "export NODE_PATH=./dist && node --max-http-header-size=81920 dist/index.js",
+    "start": "export NODE_PATH=./dist && DATA_EXPLORER_CONFIG_NAME=astra NODE_ENV=development CASSANDRA_HOST=127.0.1.1 node --max-http-header-size=81920 dist/index.js",
     "docker:taillogs": "docker-compose -f docker-compose.dev.yml logs -f",
     "docker:build": "docker-compose -f docker-compose.demo.yml build",
     "docker:demo": "docker-compose -f docker-compose.demo.yml up -d && open http://localhost",
