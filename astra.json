@@ -7,5 +7,6 @@
   "tags": [{ "name": "javascript" }],
   "category": "tools",
   "gitpodUrl": "https://gitpod.io/#https://github.com/DataStax-Examples/nf-data-explorer",
-  "priority": 1
+  "priority": 1,
+  "heroImage": "https://raw.githubusercontent.com/DataStax-Examples/nf-data-explorer/master/hero.png"
 }
