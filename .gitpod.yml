@@ -1,7 +1,16 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: 'nvm install 14.19.2 && yarn && yarn build' # runs during prebuild
-    command: 'yarn start'
+#  - init: 'nvm install 14.19.2 && yarn && yarn build' # runs during prebuild
+#    command: 'yarn start'
+ - name: install
+   before: |
+     nvm install 14.19.2
+     sudo pip install nodeenv
+     nodeenv --node 14.17.6 venv
+     . venv/bin/activate
+     yarn && yarn build
+   command: |
+      yarn start
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
